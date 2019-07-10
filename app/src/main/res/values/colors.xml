@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorWhite">#FFF</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorLime">#00FF00</color>
+    <color name="colorLimeGreen">#32CD32</color>
+    <color name="colorForestGreen">#228B22</color>
+    <color name="colorHijau">#008000</color>
+    <color name="colorDarkGreen">#006400</color>
+    <color name="colorBoxTrans">#D9006600</color>
+    <color name="colorIjoTuaHi">#016600</color>
+    <color name="colorIjoTerangCoinBorderTimerChoose">#00CC00</color>
+    <color name="colorIjoHomeBox">#66CC66</color>
+    <color name="colorIjoTuaHomeText">#006600</color>
+    <color name="colorIjoTimerSymbol">#005900</color>
+    <color name="colorGame2Num2">#FFDDE8</color>
+    <color name="colorGame2Num1">#D27B3A</color>
+    <color name="colorGame3Num1">#BB6C46</color>
+    <color name="colorGame3Num2">#FFB470</color>
+    <color name="colorReportScoreBox">#33CC33</color>
+    <color name="colorRedBackgroundClose">#FF3300</color>
+    <color name="colorRedStrokeClose">#C60000</color>
+    <color name="colorBlueCircleBtnChooseText">#0099FF</color>
+    <color name="colorBlueTimerBoxScoreReport">#0099CC</color>
+    <color name="colorBlueTimerIv">#003333</color>
+    <color name="colorBlueGame2Num1">#333333</color>
+    <color name="colorBlueGame2Num2">#797979</color>
+    <color name="colorBlueRecBtnChooseText">#0066CC</color>
+    <color name="colorBlueGame3Num1">#CCCCCC</color>
+    <color name="colorBlueGame3Num2">#D41920</color>
+    <color name="colorBlueScoreReportStroke">#006699</color>
+    <color name="colorBlueBoxTrans2">#D9006699</color>
+    <color name="colorBlueHomeText">#003399</color>
+
+    <color name="colorBlue">#006699</color>
+    <color name="colorLightBlue">#0099cc</color>
+    <color name="colorGreen">#006600</color>
+    <color name="colorLightGreen">#00cc00</color>
+</resources>

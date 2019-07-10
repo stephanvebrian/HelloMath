@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cover_bg"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/iv_BackgroundRegist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_hellomath"/>
+
+    <ImageButton
+        android:id="@+id/btn_BackRegist"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/ic_back_white_24dp"
+        />
+
+    <ImageView
+        android:layout_below="@+id/iv_BackgroundRegist"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="400dp"
+        android:layout_height="190dp"
+        android:alpha="0.72"
+        android:background="@drawable/roundbutton"/>
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_BackgroundRegist">
+
+        <TextView
+            android:id="@+id/tv_NameRegist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cartoonfont"
+            android:text="Name "
+            android:textColor="#FFF"
+            android:textSize="21dp"/>
+
+        <EditText
+            android:id="@+id/et_NameRegist"
+            android:layout_marginLeft="150dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="#787878"
+            android:hint="Your Name"
+            android:maxLength="6"
+            android:textColorHint="#f2f2f2"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/cartoonfont"/>
+
+        <TextView
+            android:id="@+id/tv_GenderRegist"
+            android:layout_below="@+id/tv_NameRegist"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cartoonfont"
+            android:text="Gender"
+            android:textColor="#FFF"
+            android:textSize="21dp"/>
+
+        <ImageView
+            android:id="@+id/iv_IconMen"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="-20dp"
+            android:src="@drawable/icon_men"/>
+
+        <CheckBox
+            android:id="@+id/cb_Men"
+            android:layout_below="@+id/tv_NameRegist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="175dp"
+            android:buttonTint="#4bb1e4"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:enabled="true"
+            android:checked="false"
+            />
+
+        <ImageView
+            android:id="@+id/iv_IconWomen"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="128dp"
+            android:src="@drawable/icon_women"/>
+
+        <CheckBox
+            android:id="@+id/cb_Women"
+            android:layout_below="@+id/tv_NameRegist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="240dp"
+            android:buttonTint="#4bb1e4"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:enabled="true"
+            android:checked="false"
+            />
+
+        <TextView
+            android:id="@+id/tv_DOBRegist"
+            android:layout_below="@+id/tv_GenderRegist"
+            android:layout_marginTop="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cartoonfont"
+            android:text="Date of Birth"
+            android:textColor="#FFF"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/spin_day"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="108dp"
+            android:background="#787878"
+            android:entries="@array/day_arrays"
+            android:prompt="@string/day_prompt"
+            ></Spinner>
+
+
+        <Spinner
+            android:id="@+id/spin_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="108dp"
+            android:background="#787878"
+            android:entries="@array/month_arrays"
+            android:prompt="@string/month_prompt"
+            ></Spinner>
+
+        <Spinner
+            android:id="@+id/spin_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="196dp"
+            android:layout_marginTop="108dp"
+            android:background="#787878"
+            android:prompt="@string/year_prompt"
+            android:entries="@array/year_arrays"
+            ></Spinner>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="84dp"
+        android:layout_height="100dp"
+        android:src="@drawable/char3"
+        android:layout_marginTop="198dp"
+        android:layout_marginLeft="445dp"/>
+
+    <Button
+        android:id="@+id/btn_SubmitRegist"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginLeft="445dp"
+        android:text="Okay"
+        android:textColor="#f4e1e1"
+        android:backgroundTint="#f1919191"
+        android:fontFamily="@font/cartoonfont"/>
+
+</RelativeLayout>

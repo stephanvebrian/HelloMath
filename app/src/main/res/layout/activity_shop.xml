@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ShopActivity"
+    >
+    <ImageView
+        android:id="@+id/ivIjo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_home"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/boxUsernameBG"
+        android:layout_width="168dp"
+        android:layout_height="86dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:background="@drawable/ic_cloud_black_24dp">
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Hi, Cindy!"
+            android:textSize="22dp"
+            android:fontFamily="@font/cartoonfont"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lineCoinShopping"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/boxCoin"
+            android:layout_width="92dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rectangle_timer">
+            <ImageView
+                android:id="@+id/ivCoin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/coin_img"/>
+            <TextView
+                android:id="@+id/tvCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="999"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlShopping"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/boxCoin"
+            android:layout_marginLeft="-66dp"
+            android:gravity="center"
+            android:background="@drawable/rectangle_shape_shopping">
+            <Button
+                android:id="@+id/btnShopping"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_shopping_cart_white_24dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/boxTheme1"
+        android:layout_below="@+id/boxUsernameBG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="104dp">
+
+        <ImageView
+            android:id="@+id/ivTheme1"
+            android:layout_width="214dp"
+            android:layout_height="124dp"
+            android:background="@drawable/background_cover" />
+        <ImageView
+            android:id="@+id/ivHelloMath1"
+            android:layout_width="105dp"
+            android:layout_height="31dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/hello_math" />
+        <RelativeLayout
+            android:id="@+id/lineChar1"
+            android:layout_below="@+id/ivHelloMath1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/char_3" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/char_2" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/char_5" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="120dp"
+                android:background="@drawable/char_6" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/boxBtnTheme1"
+            android:layout_width="214dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/ivTheme1"
+            android:background="@drawable/rectangle_shape_3">
+
+            <Button
+                android:id="@+id/btnThemeUse1"
+                android:layout_width="62dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rectangle_shape"
+                android:backgroundTint="#006699"
+                android:text="USED"
+                android:textColor="#fff"
+                android:clickable="false"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/boxTheme2"
+        android:layout_below="@+id/boxUsernameBG"
+        android:layout_toRightOf="@+id/boxTheme1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/ivTheme2"
+            android:layout_width="228dp"
+            android:layout_height="125dp"
+            android:background="@drawable/background_cover1" />
+
+        <ImageView
+            android:id="@+id/ivHelloMath2"
+            android:layout_width="114dp"
+            android:layout_height="28dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/hello_math" />
+
+        <RelativeLayout
+            android:id="@+id/lineChar2"
+            android:layout_below="@+id/ivHelloMath2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/char_2_1"
+                />
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/char_1_1" />
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/char_3_1"
+                />
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="120dp"
+                android:background="@drawable/char_5_1"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="228dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/ivTheme2"
+            android:background="@drawable/rectangle_shape_3">
+
+            <ImageView
+                android:id="@+id/ivCoinTheme2"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/coin_img"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_toRightOf="@+id/ivCoinTheme2"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/image_50" />
+
+            <Button
+                android:id="@+id/btnThemeUse2"
+                android:layout_width="62dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rectangle_shape"
+                android:text="BUY"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/ic_back_white_24dp" />
+
+
+    <!--<Button-->
+    <!--android:id="@+id/btnThemeUse2"-->
+    <!--android:layout_width="62dp"-->
+    <!--android:layout_height="32dp"-->
+    <!--android:layout_marginLeft="500dp"-->
+    <!--android:layout_marginTop="240dp"-->
+    <!--android:background="@drawable/rectangle_shape_2"-->
+    <!--android:backgroundTint="#006699"-->
+    <!--android:text="USE"-->
+    <!--android:textColor="#fff"-->
+    <!--android:textSize="10dp"-->
+    <!--android:visibility="invisible"/>-->
+
+
+
+    <!--<ImageSwitcher-->
+    <!--android:id="@+id/imgsw"-->
+    <!--android:layout_width="match_parent"-->
+
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentTop="true">-->
+
+    <!--</ImageSwitcher>-->
+</RelativeLayout>

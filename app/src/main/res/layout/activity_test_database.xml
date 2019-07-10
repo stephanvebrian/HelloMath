@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    tools:context=".TestDatabase">
+
+    <EditText
+        android:id="@+id/et_cekuser"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="tulis"
+        />
+
+    <Button
+        android:id="@+id/btn_click"
+        android:layout_below="@+id/et_cekuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLICK"
+        />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_below="@+id/btn_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WAT"
+        />
+
+    <TextView
+        android:id="@+id/tv_ko2"
+        android:layout_below="@+id/tv_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CEK KOIN"
+        />
+
+    <TextView
+        android:id="@+id/tv_cekscore1"
+        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cek Score Game 1"
+        />
+
+    <TextView
+        android:id="@+id/tv_cekscore2"
+        android:layout_below="@+id/tv_cekscore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cek Score Game 2"
+        />
+
+    <TextView
+        android:id="@+id/tv_cekscore3"
+        android:layout_below="@+id/tv_cekscore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cek Score Game 3"
+        />
+
+    <Button
+        android:id="@+id/testIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="200dp"
+        android:text="Intent"/>
+
+</RelativeLayout>

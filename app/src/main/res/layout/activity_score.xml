@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_ActivityBG"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ScoreActivity"
+    android:background="@drawable/background_home">
+
+
+    <ImageView
+        android:id="@+id/ivHighScore"
+        android:layout_width="435dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/high_score_image"
+        />
+
+    <RelativeLayout
+        android:id="@+id/ivBox"
+        android:layout_width="580dp"
+        android:layout_height="270dp"
+        android:layout_below="@+id/ivHighScore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:background="@drawable/rectangle_shape">
+
+        <RelativeLayout
+            android:id="@+id/lineChooseGame"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/ib_NumbersGame"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:background="@drawable/roundbutton">
+
+                <TextView
+                    android:id="@+id/tv_Numbers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Numbers"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/cartoonfont"
+                    android:textColor="#595959"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ib_PlusMinGames"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/ib_NumbersGame"
+                android:background="@drawable/roundbutton">
+
+                <ImageView
+                    android:id="@+id/iv_PlusNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.60"
+                    android:src="@drawable/ic_plus_grey_24dp" />
+
+                <ImageView
+                    android:id="@+id/iv_MinNum"
+                    android:layout_toRightOf="@+id/iv_PlusNum"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:alpha="0.59"
+                    android:background="@drawable/icon_minus" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ib_MultiplyGame"
+                android:layout_toRightOf="@+id/ib_PlusMinGames"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:background="@drawable/roundbutton">
+
+                <ImageView
+                    android:id="@+id/iv_MultiNum"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:alpha="0.60"
+                    android:src="@drawable/icon_multiply" />
+
+                <ImageView
+                    android:id="@+id/iv_DiviNum"
+                    android:layout_toRightOf="@+id/iv_MultiNum"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:alpha="0.60"
+                    android:src="@drawable/icon_divide" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lineHighScore"
+            android:layout_below="@+id/lineChooseGame"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/boxHighScore1"
+                android:layout_width="277dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rectangle_shape_yellow">
+
+                <TextView
+                    android:id="@+id/tvViewUser1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:hint="asdf" />
+
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/trophy_image" />
+
+                <TextView
+                    android:id="@+id/tvScore1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:hint="10" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/boxHighScore2"
+                android:layout_below="@+id/boxHighScore1"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rectangle_shape_red">
+
+                <TextView
+                    android:id="@+id/tvViewUser2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:hint="asdf" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="96dp"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/trophy_image" />
+
+                <TextView
+                    android:id="@+id/tvScore2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:hint="20" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/boxHighScore3"
+                android:layout_below="@+id/boxHighScore2"
+                android:layout_width="320dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rectangle_shape_orange">
+
+                <TextView
+                    android:id="@+id/tvViewUser3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:hint="asdf" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="96dp"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/trophy_image" />
+
+                <TextView
+                    android:id="@+id/tvScore3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:hint="30" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_back_white_24dp" />
+
+        <ImageView
+            android:id="@+id/ivCharHighScore"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/char_3" />
+    </RelativeLayout>
+
+</RelativeLayout>
